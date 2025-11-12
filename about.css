@@ -7,6 +7,18 @@ body {
   overflow: hidden;
 }
 
+       body{
+        background: linear-gradient(-45deg, #e10f86, #36ea2d, #0f13e1, #fc059d);
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        height: 100vh;
+}
+
+        @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+}
 
 .grid-container {
   display: grid;
@@ -92,7 +104,7 @@ body {
   display: flex;
   list-style: none;
   flex-direction: column;
-  margin-top: 15vh;
+  margin-top: 10vh;
   margin-left: -700px;
  
 }
@@ -177,12 +189,12 @@ body {
 
     .text-section {
         grid-column: 1/11;
-       margin-top: -6vh;
+       
        margin-left: 100px;
 
         li:nth-child(1) {
             font-size: 30px;
-            margin-top: -7vh;
+            margin-top: -5vh;
             text-align: center;
             margin-left: 500px;
         }
@@ -196,11 +208,13 @@ body {
         li:nth-child(3) {
             font-size: 30px;
             text-align: center;
+            margin-top: 3px;
             margin-left: 500px;
         }
 
          li:nth-child(4) {
             font-size: 20px;
+            margin-top: -5px;
             text-align: center;
             margin-left: 500px;
         }
@@ -328,7 +342,7 @@ body {
     grid-column: 1 / 11;
     margin: 200;
     text-align: center;
-    margin-top: -3vh;
+    margin-top: 5vh;
     margin-left: 100px;
   }
 
